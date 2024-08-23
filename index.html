@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/materialize/css/materialize.css">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+  <link rel="stylesheet" type="text/css" href="css/magico.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.alerts.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+  <script type="text/javascript" src="js/funciones_jugeteria.js"></script>
+  <script type="text/javascript" src="css/materialize/js/materialize.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/jquery.alerts.js"></script>
+  <script type="text/javascript" src="js/jugeteria_bd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Magical Toyland</title>
+</head>
+<body>
+	<!-- Barra de Navegación -->
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper lighten-4 barra colorSidenav">
+      <a href="#" class="brand-logo">&nbsp<img src="assets/img/magico.png" alt="Logo" class="logo"></a>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#" class="black-text">Inicio</a></li>
+        <li><a href="#quienes somos" class="black-text">¿Quienes somos?</a></li>
+        <li><a href="#marcas" class="black-text">Marcas</a></li>
+        <li><a href="videos.html" class="black-text">Videos</a></li>
+        <li><a href="graficas.html" class="black-text">Graficas</a></li>
+        <li><a href="#Sucursales" class="black-text">Sucursales</a></li>
+        <li><a href="#formulario" class="black-text">Formulario</a></li>
+        <li>
+      <a href="https://x.com/Magical_Toyland"  target="_blank" class="tooltip" title="X (Twitter)">
+        <i class="fa-brands fa-x-twitter tamanoIcono"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/magical_toyland/" target="_blank" class="tooltip" title="Instagram">
+        <i class="fa-brands fa-instagram tamanoIcono"></i>
+      </a>
+    </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Sidenav para dispositivos móviles -->
+  <ul id="slide-out" class="sidenav colorSidenav">
+    <li><a class="waves-effect" href="#Inicio"><i class="material-icons colorIcono">home</i>Inicio</a></li>
+    <li><a class="waves-effect" href="#quienes somos"><i class="material-icons colorIcono">account_circle</i>¿Quienes somos?</a></li>
+    <li><a class="waves-effect" href="#marcas"><i class="material-icons colorIcono">grade</i>Marcas</a></li>
+    <li><a class="waves-effect" href="videos.html"><i class="material-icons colorIcono">computer</i>Videos</a></li>
+    <li><a class="waves-effect" href="graficas.html"><i class="material-icons colorIcono">pie_chart</i>Graficas</a></li>
+    <li><a class="waves-effect" href="#Sucursales"><i class="material-icons colorIcono">pin_drop</i>Sucursales</a></li>
+    <li><a class="waves-effect" href="#formulario"><i class="material-icons colorIcono">import_contacts</i>Formulario</a></li>
+  </ul>
+  <!-- Banner -->
+    <div class="banner" id="Inicio">
+    <img id="BT21" src="assets/img/BT21.png" alt="Logo">
+    <div class="banner-content">
+      <h1 id="pauseResume" class="titulos"></h1>
+      <p class="eslogan">Juguetes que despiertan sonrisas y fantasías</p>
+      <a href="#marcas" class="boton">Ver Ahora</a>
+    </div>
+</div>
+    <div class="parallax" id="quienes somos"></div>
+    <div class="fondoBlanco"> <h3 id="titulo">¿Quienes Somos?</h3>
+        <p>Bienvenidos a Magical Toyland, el lugar donde la magia y la diversión cobran vida. En nuestra tienda, nos dedicamos a ofrecer una experiencia única y encantadora para niños y familias, con una amplia selección de juguetes que inspiran imaginación y alegría. Cada uno de nuestros productos ha sido cuidadosamente seleccionado para garantizar la más alta calidad y la máxima diversión, transformando cada momento de juego en una aventura mágica. En Magical Toyland, creemos que los juguetes no son solo objetos, sino puertas a mundos de fantasía, aprendizaje y recuerdos inolvidables. Únete a nosotros y descubre un universo lleno de maravillas, donde cada sonrisa cuenta y cada juego es una nueva historia por contar.</p>
+        <div class="parallax"></div>
+    <div class="fondoBlanco"><h3 id="subtitulo">Historia</h3>
+      <p>En 1985, en el corazón de una bulliciosa ciudad, nació la visión de lo que se convertiría en una de las jugueterías más queridas del mundo: Magical Toyland. La idea fue concebida por Sofía Martínez, una joven emprendedora con una pasión inquebrantable por los juguetes y un profundo deseo de crear un espacio donde la imaginación de los niños pudiera florecer sin límites.
+Desde pequeña, Sofía había soñado con un lugar donde los juguetes no solo fueran objetos, sino compañeros de aventuras, creadores de historias y guardianes de recuerdos. Inspirada por los cuentos que su abuela le contaba y su amor por la magia de la niñez, decidió que su juguetería no sería como cualquier otra. Sería un lugar donde cada juguete contara una historia, donde la creatividad y la fantasía fueran los pilares fundamentales.
+Magical Toyland abrió sus puertas en el invierno de 1986, en un pequeño local adornado con vitrinas llenas de color y calidez</p></div>
+    </div>
+    <section id="marcas">
+      <!-- Sección de Marcas -->
+      <h3 class="center-aling">Marcas</h3>
+  <div class="logo-section">
+    <a href="lego.html">
+    <img src="assets/img/lego.png" alt="Logo 1" class="logo">
+    </a>
+    <a href="mattel.html">
+    <img src="assets/img/mattel.png" alt="Logo 2" class="logo">
+    </a>
+    <a href="Hasbro.html">
+    <img src="assets/img/has.png" alt="Logo 3" class="logo">
+    </a>
+    <a href=" price.html">
+    <img src="assets/img/price.png" alt="Logo 4" class="logo">
+    </a>
+  </div>
+    </section>
+    <section>
+      <div class="container">
+  <h2 class="center-align">Lo más vendido</h2>
+  <div class="row">
+    <!-- Producto 1 -->
+    <div class="col s12 m6 l4">
+      <div class="card" >
+        <div class="card-image">
+          <img id="jugetes1"  src="assets/img/l7.jpeg" alt="Barbie" class="responsive-img">
+        </div>
+        <div class="card-content" id="jugete1">
+          <p class="card-title">Piezas de Lego</p>
+          <h5>$550</h5>
+          <br>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Producto 2 -->
+    <div class="col s12 m6 l4">
+      <div class="card" id="jugetes2">
+        <div class="card-image">
+          <img src="assets/img/gusano.jpeg" alt="Robot Educativo" class="responsive-img">
+        </div>
+        <div class="card-content" id="jugete2">
+          <p class="card-title">Robot Educativo</p>
+          <h5>$650</h5>
+          <br>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Producto 3 -->
+    <div class="col s12 m6 l4">
+      <div class="card" id="jugetes3">
+        <div class="card-image">
+          <img src="assets/img/tiburon.jpeg" alt="Producto 3" class="responsive-img">
+          
+        </div>
+        <div class="card-content" id="jugete3">
+          <p class="card-title">Peluche de tiburon</p>
+          <h5>$150</h5>
+          <br>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Producto 4 -->
+    <div class="col s12 m6 l4">
+      <div class="card" id="jugetes4">
+        <div class="card-image">
+          <img src="assets/img/bebe.jpeg" alt="Barbie" class="responsive-img">
+        </div>
+        <div class="card-content" id="jugete4">
+          <p class="card-title">Nenuco</p>
+          <h5>$1100</h5>
+          <br>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Producto 5 -->
+    <div class="col s12 m6 l4">
+      <div class="card" id="jugetes5">
+        <div class="card-image">
+          <img src="assets/img/kiti.jpeg" alt="Robot Educativo" class="responsive-img">
+        </div>
+        <div class="card-content" id="jugete5">
+          <p class="card-title">Funk Pop Hello Kity</p>
+          <h5>$550</h5>
+          <br>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Producto 6 -->
+    <div class="col s12 m6 l4">
+      <div class="card" id="jugetes6">
+        <div class="card-image">
+          <img src="assets/img/oso.jpeg" alt="Producto 3" class="responsive-img">
+        </div>
+        <div class="card-content" id="jugete6">
+          <p class="card-title">Cubbby Peluche</p>
+          <h5>$1200</h5>
+          <br>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star fa-beat fa-2xl" style="color: #FFD43B;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <section id="Sucursales">
+      <div class="container-fluid">
+    <div class="row">
+      <div class="col s12 center-align">
+        <h1>Nuestras Sucursales</h1>
+      </div>
+    </div>
+<div class="row">
+  <div class="col s12 m6 l4 xl4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.803883863016!2d-99.17093019875442!3d19.414524259773277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3f75e691dd%3A0x21992d3e829dccf0!2sJuguetron!5e0!3m2!1ses-419!2smx!4v1723469459988!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="col s12 m6 l4 xl4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120423.45837436673!2d-99.23681211104629!3d19.40233303362243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff1bd2f7fa15%3A0xb24ee79da36ed995!2sJuguetibici%20Parque%20Delta!5e0!3m2!1ses-419!2smx!4v1723469939077!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+<div class="col s12 m6 l4 xl4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15527.199232920499!2d-99.16837169967069!3d19.430150303444403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff8a69121f49%3A0x620e00cf23910c83!2sla%20jugueter%C3%ADa%20de%20Mexico!5e0!3m2!1ses-419!2smx!4v1723476888479!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+    </section>
+    <section>
+      <div class="row">
+      <div class="col s12 center-align">
+        <h1>Formulario</h1>
+      </div>
+    </div>
+    </section>
+    <section>
+      </section>
+<section id="formulario">
+  <form id="form" >
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col s12 center-align">
+      
+    </div>
+    </div>
+    <div class="row">
+      <p>Los campos marcados con <span class="red-text">*</span> requesidos</p>
+      <div class="col s12 input-field">
+        <label><span class="red-text">*</span>Nombre</label>
+        <input type="text" id="nombre" name="nombre" required="true" pattern="[A-Za-z\s]{3,50}" maxlength="50">
+      </div>
+      <div class="row">
+        <div class="col s12 input-field">
+          <label><span class="red-text">*</span>Teléfono</label>
+          <input type="text" id="telefono" name="telefono" required="true" pattern="[0-9]{10}"  maxlength="10">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 input-field">
+          <label><span class="red-text">*</span>Email</label>
+          <input type="email" id="correo" name="correo" required="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 input-field">
+          <textarea id="comentarios" name="comentarios" class="materialize-textarea" pattern="[A-Za-z\s]{3,50}" maxlength="50"></textarea>
+          <label>Quejas o sugerencias</label>
+        </div>
+      </div>
+      <div class="row center-align">
+        <div class="col s6">
+          <button id="guardar" type="submit" class="btn cyan">Guardar</button>
+        </div>
+        
+        <div class="col s6">
+          <input value="cancelar" type="reset" id="cancelar" class="btn red" name="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  <section>
+    <footer>
+<div class="container">
+   <div class="row">
+     <div class="col s12 center-align">
+       <p>@Copyright todo los Derechos Reservados Magical Toyland 2024.</p>
+       <a  class="tooltip" title="Twitter"href="https://x.com/Magical_Toyland"  target="_blank"><i class="fa-brands fa-x-twitter tamanoIcono"></i></a>
+       <a class="tooltip" title=Instagram href="https://www.instagram.com/magical_toyland/" target="_blank"><i class="fa-brands fa-instagram tamanoIcono"></i></a>
+     </div>
+   </div>
+ </div>
+</footer>
+  </section>
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyByUeuRSnmlcOlRkrN1jZ2i1lC7qQbdMG0",
+    authDomain: "magical-toyland-100a1.firebaseapp.com",
+    projectId: "magical-toyland-100a1",
+    storageBucket: "magical-toyland-100a1.appspot.com",
+    messagingSenderId: "313002167898",
+    appId: "1:313002167898:web:a916af41de5378b1af9263",
+    measurementId: "G-E0ZRQV724Z"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>
